@@ -1,7 +1,8 @@
 
 CC ?= gcc
 LVGL_DIR_NAME ?= lvgl
-LVGL_DIR ?= ${shell pwd}LDFLAGS ?= -lm
+LVGL_DIR ?= ${shell pwd}
+LDFLAGS ?= -lm
 BIN = h29k_sysinfo
 
 MAINSRC = main.c $(wildcard ui/*.c) $(wildcard utils/*.c)
